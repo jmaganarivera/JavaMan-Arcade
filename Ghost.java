@@ -44,8 +44,8 @@ public class Ghost {
 	    public void resetPosition() {
 	        this.x = 100;
 	        this.y = 100;
-	        // You might also want to reset the ghost's direction
-	        this.direction = getRandomDirection(); // or set to a default direction
+
+	        this.direction = getRandomDirection();
 	        
 	    }
 	    
@@ -79,8 +79,8 @@ public class Ghost {
 
 	    private boolean isValidMove(Maze maze, int nextX, int nextY) {
 	        // Convert nextX and nextY to row and column indexes
-	        int col = nextX / 20; // Assuming each cell 
-	        int row = nextY / 20; // Assuming each cell 
+	        int col = nextX / 20; 
+	        int row = nextY / 20; 
 
 	        // Check if the next position is a wall (0)
 	        return maze.getMaze()[row][col] != 0; // Valid move if not a wall
