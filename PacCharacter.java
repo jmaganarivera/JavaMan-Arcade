@@ -64,7 +64,7 @@ public class PacCharacter{
 	    
 	    public void move() {
 	        
-	    	 int speed = 20; // Speed of Pac-Man's movement; adjust as needed
+	    	 int speed = 20; // Speed of Pac-Man's movement
 	    	    switch (direction) {
 	    	        case LEFT:
 	    	            this.x -= speed;
