@@ -104,7 +104,7 @@ public class Ghost {
 	        return image;
 	    }
 	    
-	    // Setter for the ghost's direction, in case you want to change it from outside
+	    // Setter for the ghost's direction
 	    public void setDirection(Direction direction) {
 	        this.direction = direction;
 	    }
