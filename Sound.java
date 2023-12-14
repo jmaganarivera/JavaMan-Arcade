@@ -14,7 +14,7 @@ public class Sound {
     public static void playDotSound(String filename) {
         try {
             if (dotClip == null) {
-                // Load the sound file if it's not already loaded
+                // Load the sound file 
                 AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(
                     Sound.class.getResource("/sounds/" + filename));
                 dotClip = AudioSystem.getClip();
@@ -37,7 +37,7 @@ public class Sound {
     public static void playCollisionSound(String filename) {
         try {
             if (collisionClip == null) {
-                // Load the sound file if it's not already loaded
+                // Load the sound file 
                 AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(
                     Sound.class.getResource("/sounds/" + filename));
                 collisionClip = AudioSystem.getClip();
