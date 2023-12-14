@@ -175,9 +175,9 @@ public class MazeWindow extends JPanel {
             gameStarted = false;
         } else {
             // Reset Pac-Man and ghosts to their starting positions
-            pacMan.resetPosition(); // Implement this method in PacCharacter class
+            pacMan.resetPosition(); 
             for (Ghost ghost : ghosts) {
-                ghost.resetPosition(); // Implement this method in Ghost class
+                ghost.resetPosition(); 
             }
         }
     }
@@ -252,7 +252,7 @@ public class MazeWindow extends JPanel {
     	        // All levels are complete
     	        gameWon = true;
     	        gameStarted = false; // Stop the game
-    	        // You might also reset the game state or prepare for a new game
+    	       
     	    }
     }
     
@@ -264,7 +264,7 @@ public class MazeWindow extends JPanel {
         for (Ghost ghost : ghosts) {
             ghost.resetPosition();
         }
-        // Optionally reset/adjust other game state variables
+       
     }
     
     private void restartGame() {
@@ -274,7 +274,7 @@ public class MazeWindow extends JPanel {
         gameStarted = false;
         pacMan.resetPosition();
         for (Ghost ghost : ghosts) {
-            ghost.resetPosition(); // Implement this method in Ghost class
+            ghost.resetPosition(); 
         }
         currentMaze.resetDots(); // Reset the collected dots in the maze
     }
