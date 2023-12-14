@@ -79,8 +79,8 @@ public class Ghost {
 
 	    private boolean isValidMove(Maze maze, int nextX, int nextY) {
 	        // Convert nextX and nextY to row and column indexes
-	        int col = nextX / 20; // Assuming each cell in your maze is 20 pixels wide
-	        int row = nextY / 20; // Assuming each cell in your maze is 20 pixels tall
+	        int col = nextX / 20; // Assuming each cell 
+	        int row = nextY / 20; // Assuming each cell 
 
 	        // Check if the next position is a wall (0)
 	        return maze.getMaze()[row][col] != 0; // Valid move if not a wall
