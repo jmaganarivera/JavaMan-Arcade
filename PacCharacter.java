@@ -23,13 +23,18 @@ public class PacCharacter{
 	        currentImage = new ImageIcon(getClass().getResource("/images/pacman.png")).getImage(); // Initial image
 	        
 	        // Set initial position (this should probably be the starting position in the maze)
-	        x = 20; // For example, starting at (1, 1) in the maze
+	        x = 20; 
 	        y = 20;
 	    }
 	 
 	 
 	 
-	 
+	 public void resetPosition() {
+	        this.x = 20;
+	        this.y = 20;
+	        // Reset the direction if needed
+	        this.direction = Direction.NONE; 
+	    }
 	 
 	// Getters
 	    public int getX() {
