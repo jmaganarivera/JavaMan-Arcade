@@ -115,7 +115,7 @@ public class Maze {
             case 4:
             	maze = level4Layout;
             	break;
-            // Add more cases for additional levels
+            
             default:
                 maze = level1Layout; // Default to level 1 layout
         }
