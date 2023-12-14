@@ -22,7 +22,7 @@ public class PacCharacter{
 	        downImage = new ImageIcon(getClass().getResource("/images/down.gif")).getImage();
 	        currentImage = new ImageIcon(getClass().getResource("/images/pacman.png")).getImage(); // Initial image
 	        
-	        // Set initial position (this should probably be the starting position in the maze)
+	        // Set initial position 
 	        x = 20; 
 	        y = 20;
 	    }
